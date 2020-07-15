@@ -13,6 +13,7 @@ A curated list of awesome privilege escalation
     * [NFS](#nfs)
     * [Presentations](#presentations)
 * [Windows](#windows)
+    * [DLL Hijacking](#dll-hijacking)
     * [Potato](#potato)
     * [Unquoted services with spaces](#unquoted-services-with-spaces)
     * [Groups.xml](#groupsxml)
@@ -29,14 +30,15 @@ A curated list of awesome privilege escalation
  - [A guide to Linux Privilege Escalation](https://payatu.com/guide-linux-privilege-escalation/)
  - [Attack and Defend: LinuxPrivilege Escalation Techniques of 2016](https://www.sans.org/reading-room/whitepapers/linux/attack-defend-linux-privilege-escalation-techniques-2016-37562): This paper will examine Linux privilege escalation techniques used throughout 2016 in detail, highlighting how these techniques work and how adversaries are using them.
  - [Back To The Future: Unix Wildcards Gone Wild](https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt): This article will cover one interesting old-school Unix hacking technique, that will still work in 2013.
- - [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
- - [Enumeration is the Key](https://medium.com/basic-linux-privilege-escalation/basic-linux-privilege-escalation-966de11f9997)
+ - [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/): by g0tmi1k
+ - [Enumeration is the Key](https://medium.com/basic-linux-privilege-escalation/basic-linux-privilege-escalation-966de11f9997): by Marcos Tolosa
  - [Hackers Hut](https://www.win.tue.nl/~aeb/linux/hh/hh.html): Some random hacking hints, mainly from a Linux point of view.
  - [Hacking Linux Part I: Privilege Escalation](http://www.dankalia.com/tutor/01005/0100501004.htm)
  - [How privileges work in operating systems?](https://www.future-processing.pl/blog/privilege-escalation/)
  - [Linux elevation of privileges ToC](https://guif.re/linuxeop)
- - [Linux - Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
+ - [Linux - Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md): Methodology from PayloadsAllTheThings 
  - [Linux Privilege Escalation](https://percussiveelbow.github.io/linux-privesc/): an introduction to Linux escalation techniques, mainly focusing on file/process permissions, but along with some other stuff too.
+ - [Linux Privilege Escalation](https://book.hacktricks.xyz/linux-unix/privilege-escalation): by HackTricks
  - [Linux Privilege Escalation via Dynamically Linked Shared Object Library](https://www.contextis.com/en/blog/linux-privilege-escalation-via-dynamically-linked-shared-object-library): How RPATH and Weak File Permissions can lead to a system compromise.
  - [Local Linux Enumeration & Privilege Escalation Cheatsheet](https://www.rebootuser.com/?p=1623): a few Linux commands that may come in useful when trying to escalate privileges on a target system.
  - [Local Linux Enumeration & Privilege Escalation](https://hackingandsecurity.blogspot.com/2016/05/local-linux-enumeration-privilege.html): a few Linux commands that may come in useful when trying to escalate privileges on a target system.
@@ -68,7 +70,7 @@ A curated list of awesome privilege escalation
 ### Capabilities
  - [An Interesting Privilege Escalation vector (getcap/setcap)](https://nxnjz.net/2018/08/an-interesting-privilege-escalation-vector-getcap/)
  - [Capabilities](https://wiki.archlinux.org/index.php/Capabilities)
- - [Exploiting capabilities](http://blog.sevagas.com/IMG/pdf/exploiting_capabilities_the_dark_side.pdf): Parcel root power,  the dark side of capabilities
+ - [Exploiting capabilities](http://blog.sevagas.com/IMG/pdf/exploiting_capabilities_the_dark_side.pdf): Parcel root power, the dark side of capabilities
  - [getcap, setcap and file capabilities](https://www.insecure.ws/linux/getcap_setcap.html)
  - [Spicing up your own access with capabilities](https://www.redpill-linpro.com/sysadvent/2016/12/06/spicing-up-your-access.html)
 
@@ -108,6 +110,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Exploiting a Mis-Configured NFS Share](https://www.computersecuritystudent.com/SECURITY_TOOLS/METASPLOITABLE/EXPLOIT/lesson4/index.html)
  - [Linux Privilege Escalation using Misconfigured NFS](https://www.hackingarticles.in/linux-privilege-escalation-using-misconfigured-nfs/): How to exploit a misconfigured NFS share to gain root access to a remote host machine.
  - [NFS weak permissions](https://touhidshaikh.com/blog/?p=788)
+ - [Linux Privilege Escalation using weak NFS permissions](https://haiderm.com/linux-privilege-escalation-using-weak-nfs-permissions/): t Linux Privilege Escalation using weak NFS permissions in “/etc/exports”. by Haider Mahmood
 
 ### Presentations
  - [Linux privilege escalation for fun, profit, and all around mischief](https://www.irongeek.com/i.php?page=videos/bsidesaugusta2016/its-too-funky-in-here04-linux-privilege-escalation-for-fun-profit-and-all-around-mischief-jake-williams): Examine opportunities for privilege escalation that can vault you from zero to hero in a few easy steps.
@@ -122,20 +125,32 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Privilege Escalation Windows](https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html)
  - [Privilege escalation: Windows](https://vulp3cula.gitbook.io/hackers-grimoire/post-exploitation/privesc-windows)
  - [Windows elevation of privileges ToC](https://guif.re/windowseop)
+ - [Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows/windows-local-privilege-escalation): by HackTricks
  - [Windows Post Gather Modules](https://www.offensive-security.com/metasploit-unleashed/windows-post-gather-modules/): Metasploit offers a number of post exploitation modules that allow for further information gathering on your target network.
  - [Windows Priv Esc](https://www.sock-raw.org/wiki/doku.php/windows_priv_esc)
  - [Windows Privilege Escalation Fundamentals](https://www.fuzzysecurity.com/tutorials/16.html)
  - [Windows Privilege Escalation Guide](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
  - [Windows-Privilege-Escalation](https://github.com/frizb/Windows-Privilege-Escalation): Step-by-step windows privlege escalation methodology.
+ - [Windows-Privilege-Escalation-Resources](https://github.com/Gr1mmie/Windows-Privilege-Escalation-Resources): Compilation of Resources from TCM's Windows Priv Esc Udemy Course. By Gr1mmie
  - [Windows - Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
  - [Windows Privilege Escalation](http://www.bhafsec.com/wiki/index.php/Windows_Privilege_Escalation)
  - [Windows Privilege Escalations](https://www.exploit-db.com/docs/46131)
+
+
+### DLL Hijacking
+ - [DLL Hijacking](https://ired.team/offensive-security/privilege-escalation/t1038-dll-hijacking): DLL Search Order Hijacking for privilege escalation, code execution, etc. by Red Teaming Experiments
+ - [DLL Hijacking](https://pentestlab.blog/2017/03/27/dll-hijacking/): by PentestLab
+ - [DLL Search Order Hijacking](https://attack.mitre.org/techniques/T1038/): by MITRE
+ - [PrivEsc: DLL Hijacking](https://gracefulsecurity.com/privesc-dll-hijacking/) 
+ - [Windows Privilege Escalation via DLL Hijacking](https://hacknpentest.com/windows-privilege-escalation-dll-hijacking/): Crystal-clear view on one of the most used techniques for privilege escalation by the Threat Actors. by HacknPentest
+
 
 ### Potato
  - [Hot Potato](https://pentestlab.blog/2017/04/13/hot-potato/): Hot potato is the code name of a Windows privilege escalation technique that was discovered by Stephen Breen. This technique is actually a combination of two known windows issues  like NBNS spoofing and NTLM relay with the implementation of a fake WPAD proxy server which is running locally on the target host.
  - [Hot Potato](https://securityonline.info/hot-potato-windows-privilege-escalation-metasploit-powershellhot-potato-windows-privilege-escalation/): Windows 7, 8, 10, Server 2008, Server 2012 Privilege Escalation in Metasploit & PowerShell.
  - [Hot Potato – Windows Privilege Escalation](https://foxglovesecurity.com/2016/01/16/hot-potato/): Privilege Escalation on Windows 7, 8, 10, Server 2008, Server 2012 … and a new network attack.
  - [Juicy Potato (abusing the golden privileges)](https://ohpe.it/juicy-potato/)
+ - [No more JuicyPotato? Old story, welcome RoguePotato!](https://decoder.cloud/2020/05/11/no-more-juicypotato-old-story-welcome-roguepotato/): by decoder_it and splinter_code/antonioCoco
  - [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
 
 ### Unquoted services with spaces
@@ -157,13 +172,17 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [juicy-potato](https://github.com/ohpe/juicy-potato): A sugared version of RottenPotatoNG, with a bit of juice, i.e. another Local Privilege Escalation tool, from a Windows Service Accounts to NT AUTHORITY\SYSTEM.
  - [Potato](https://github.com/foxglovesec/Potato): Potato Privilege Escalation on Windows 7, 8, 10, Server 2008, Server 2012.
  - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit): PowerSploit is a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment.
+ - [RoguePotato](https://github.com/antonioCoco/RoguePotato): Another Windows Local Privilege Escalation from Service Account to System by splinter_code/antonioCoco
  - [RottenPotato](https://github.com/foxglovesec/RottenPotato): RottenPotato local privilege escalation from service account to SYSTEM. (No longer maintained)
  - [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG): New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
+ - [Seatbelt](https://github.com/GhostPack/Seatbelt): Project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.        
  - [SessionGopher](https://github.com/Arvanaghi/SessionGopher): SessionGopher is a PowerShell tool that finds and decrypts saved session information for remote access tools.
  - [Sherlock](https://github.com/rasta-mouse/Sherlock/): PowerShell script to quickly find missing software patches for local privilege escalation vulnerabilities. (Deprecated)
+ - [SweetPotato](https://github.com/CCob/SweetPotato):  Local Service to SYSTEM privilege escalation from Windows 7 to Windows 10 / Server 2019 by CCob
  - [Tater](https://github.com/Kevin-Robertson/Tater): Tater is a PowerShell implementation of the Hot Potato Windows Privilege Escalation exploit.
  - [Watson](https://github.com/rasta-mouse/Watson): Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.
  - [WindowsEnum](https://github.com/absolomb/WindowsEnum): A Powershell Privilege Escalation Enumeration Script.
+- [Windows-Exploit-Suggester](https://github.com/AonCyberLabs/Windows-Exploit-Suggester): This tool compares a targets patch levels against the Microsoft vulnerability database in order to detect potential missing patches on the target. It also notifies the user if there are public exploits and Metasploit modules available for the missing bulletins. By AonCyberLabs
  - [windows-privesc-check](https://github.com/pentestmonkey/windows-privesc-check): Standalone executable that runs on Windows systems. It tries to find misconfigurations that could allow local unprivileged users to escalate privileges to other users or to access local apps (e.g. databases).
  - [winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS): Windows Privilege Escalation Awesome Scripts
  - [WinPwnage](https://github.com/rootm0s/WinPwnage): UAC bypass, Elevate, Persistence and Execution methods. The goal of this repo is to study the Windows penetration techniques.
@@ -200,6 +219,9 @@ is intended to be executed locally on a Linux box to enumerate basic system info
 ## Cloud
 ### AWS
  - [AWS-IAM-Privilege-Escalation](https://github.com/RhinoSecurityLabs/AWS-IAM-Privilege-Escalation): A centralized source of all AWS IAM privilege escalation methods released by Rhino Security Labs.
+
+#### Tools
+ - [Pacu](https://github.com/RhinoSecurityLabs/pacu): The AWS exploitation framework, designed for testing the security of Amazon Web Services environments. By RhinoSecurityLabs.
 
 ### GCP
  - [Tutorial on privilege escalation and post exploitation tactics in Google Cloud Platform environments](https://about.gitlab.com/blog/2020/02/12/plundering-gcp-escalating-privileges-in-google-cloud-platform/): Very deep-dive into manual post-exploitation tactics and techniques for GCP.
