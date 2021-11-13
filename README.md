@@ -21,7 +21,8 @@ A curated list of awesome privilege escalation
     * [Presentations](#presentations-1)
 * [Linux and Windows](#linux-and-windows)
 * [Docker](#docker)
-    * [Docker escape](#docker-escape)
+    * [Tools](#tools-2)
+    * [Presentations](#presentations-2)
 * [Cloud](#cloud)
    * [AWS](#aws)
    * [GCP](#gcp)
@@ -38,6 +39,7 @@ A curated list of awesome privilege escalation
  - [Linux elevation of privileges ToC](https://guif.re/linuxeop)
  - [Linux - Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md): Methodology from PayloadsAllTheThings 
  - [Linux Privilege Escalation](https://percussiveelbow.github.io/linux-privesc/): an introduction to Linux escalation techniques, mainly focusing on file/process permissions, but along with some other stuff too.
+ - [Linux Privilege Escalation](https://github.com/lamontns/pentest/blob/master/privilege-escalation/linux-privilege-escalation.md): Linux Privilege Escalation by lamontns.
  - [Linux Privilege Escalation](https://book.hacktricks.xyz/linux-unix/privilege-escalation): by HackTricks
  - [Linux Privilege Escalation via Dynamically Linked Shared Object Library](https://www.contextis.com/en/blog/linux-privilege-escalation-via-dynamically-linked-shared-object-library): How RPATH and Weak File Permissions can lead to a system compromise.
  - [Local Linux Enumeration & Privilege Escalation Cheatsheet](https://www.rebootuser.com/?p=1623): a few Linux commands that may come in useful when trying to escalate privileges on a target system.
@@ -51,6 +53,7 @@ A curated list of awesome privilege escalation
  - [Privilege escalation: Linux](https://vulp3cula.gitbook.io/hackers-grimoire/post-exploitation/privesc-linux)
  - [Privilege Escalation & Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/PrivescPostEx.md)
  - [Reach the root! How to gain privileges in Linux?](https://hackmag.com/security/reach-the-root/)
+ - [TTY Input Pushback Privilege Escalation](https://www.halfdog.net/Security/2012/TtyPushbackPrivilegeEscalation/): When user working as root switches to another user with su and happens to execute the pushback program as that user, the tty input data pushed back is executed in the shell and context of user root.
  - [Understanding Privilege Escalation](http://www.admin-magazine.com/Articles/Understanding-Privilege-Escalation): Some techniques malicious users employ to escalate their privileges on a Linux system.
 
 ### Escape restricted shells
@@ -87,12 +90,13 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Linux Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2): Next-generation exploit suggester based on Linux_Exploit_Suggester
  - [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester): Linux Exploit Suggester; based on operating system release number.
  - [linux-kernel-exploits](https://github.com/SecWiki/linux-kernel-exploits)
- - [linuxprivchecker.py](https://github.com/sleventyeleven/linuxprivchecker):  Linux Privilege Escalation Check Script
- - [Linux Privilege Escalation Check Script](https://github.com/linted/linuxprivchecker): Originally forked from the linuxprivchecker.py (Mike Czumak), this script
+ - [Linuxprivchecker.py](https://github.com/sleventyeleven/linuxprivchecker): This script is intended to be executed locally on a Linux box to enumerate basic system info and search for common privilege escalation vectors such as world writable files, misconfigurations, clear-text passwords and applicable exploits.
+ - [Linux Privilege Escalation Check Script](https://github.com/linted/linuxprivchecker): Originally forked from the linuxprivchecker.py (Mike Czumak), this script is intended to be executed locally on a Linux box to enumerate basic system info and search for common privilege escalation vectors such as word writable files, misconfigurations, clear-text password and applicable exploits.
  - [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration): Linux enumeration tools for pentesting and CTFs
  - [linux-soft-exploit-suggester](https://github.com/belane/linux-soft-exploit-suggester): linux-soft-exploit-suggester finds exploits for all vulnerable software in a system helping with the privilege escalation.
  - [PrivEsc](https://github.com/1N3/PrivEsc): A collection of Windows, Linux and MySQL privilege escalation scripts and exploits.
  - [pspy](https://github.com/DominicBreuker/pspy): unprivileged Linux process snooping
+ - [traitor](https://github.com/liamg/traitor): Automatically exploit low-hanging fruit to pop a root shell. Linux privilege escalation made easy!
  - [unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check): Shell script to check for simple privilege escalation vectors on Unix systems
  - [Unix-Privilege-Escalation-Exploits-Pack](https://github.com/Kabot/Unix-Privilege-Escalation-Exploits-Pack): Exploits for getting local root on Linux, BSD, AIX, HP-UX, Solaris, RHEL, SUSE etc.
  - [uptux](https://github.com/initstring/uptux): Specialized privilege escalation checks for Linux systems.
@@ -134,6 +138,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Windows-Privilege-Escalation-Resources](https://github.com/Gr1mmie/Windows-Privilege-Escalation-Resources): Compilation of Resources from TCM's Windows Priv Esc Udemy Course. By Gr1mmie
  - [Windows - Privilege Escalation](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
  - [Windows Privilege Escalation](http://www.bhafsec.com/wiki/index.php/Windows_Privilege_Escalation)
+ - [Windows Privilege Escalation](https://github.com/lamontns/pentest/blob/master/privilege-escalation/windows-privilege-escalation.md): Windows Privilege Escalation by lamontns.
  - [Windows Privilege Escalations](https://www.exploit-db.com/docs/46131)
 
 
@@ -159,7 +164,6 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Unquoted Service Path](https://pentestlab.blog/2017/03/09/unquoted-service-path/)
  - [UNQUOTED SERVICE PATHS](https://www.commonexploits.com/unquoted-service-paths/)
  - [Windows Privilege Escalation — Part 1 (Unquoted Service Path)](https://medium.com/@SumitVerma101/windows-privilege-escalation-part-1-unquoted-service-path-c7a011a8d8ae)
- - [Windows Privilege Escalation – Unquoted Services](https://securityboulevard.com/2018/04/windows-privilege-escalation-unquoted-services/)
  - [Windows Privilege Escalation – Unquoted Services](https://www.ethicalhacker.net/community/windows-privilege-escalation-unquoted-services/)
  - [Windows Privilege Escalation via Unquoted Service Paths](https://hausec.com/2018/10/05/windows-privilege-escalation-via-unquoted-service-paths/)
 
@@ -172,6 +176,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [juicy-potato](https://github.com/ohpe/juicy-potato): A sugared version of RottenPotatoNG, with a bit of juice, i.e. another Local Privilege Escalation tool, from a Windows Service Accounts to NT AUTHORITY\SYSTEM.
  - [Potato](https://github.com/foxglovesec/Potato): Potato Privilege Escalation on Windows 7, 8, 10, Server 2008, Server 2012.
  - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit): PowerSploit is a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment.
+ - [PrivescCheck](https://github.com/itm4n/PrivescCheck): Enumerate common Windows security misconfigurations which can be leveraged for privilege escalation and gather various information which might be useful for exploitation and/or post-exploitation, by itm4n
  - [RoguePotato](https://github.com/antonioCoco/RoguePotato): Another Windows Local Privilege Escalation from Service Account to System by splinter_code/antonioCoco
  - [RottenPotato](https://github.com/foxglovesec/RottenPotato): RottenPotato local privilege escalation from service account to SYSTEM. (No longer maintained)
  - [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG): New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
@@ -182,7 +187,8 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Tater](https://github.com/Kevin-Robertson/Tater): Tater is a PowerShell implementation of the Hot Potato Windows Privilege Escalation exploit.
  - [Watson](https://github.com/rasta-mouse/Watson): Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.
  - [WindowsEnum](https://github.com/absolomb/WindowsEnum): A Powershell Privilege Escalation Enumeration Script.
-- [Windows-Exploit-Suggester](https://github.com/AonCyberLabs/Windows-Exploit-Suggester): This tool compares a targets patch levels against the Microsoft vulnerability database in order to detect potential missing patches on the target. It also notifies the user if there are public exploits and Metasploit modules available for the missing bulletins. By AonCyberLabs
+ - [Windows-Exploit-Suggester](https://github.com/AonCyberLabs/Windows-Exploit-Suggester): This tool compares a targets patch levels against the Microsoft vulnerability database in order to detect potential missing patches on the target. It also notifies the user if there are public exploits and Metasploit modules available for the missing bulletins. By AonCyberLabs
+ - [Windows Exploit Suggester - Next Generation (WES-NG)](https://github.com/bitsadmin/wesng): WES-NG is a tool based on the output of Windows' systeminfo utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported. By bitsadmin
  - [windows-privesc-check](https://github.com/pentestmonkey/windows-privesc-check): Standalone executable that runs on Windows systems. It tries to find misconfigurations that could allow local unprivileged users to escalate privileges to other users or to access local apps (e.g. databases).
  - [winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS): Windows Privilege Escalation Awesome Scripts
  - [WinPwnage](https://github.com/rootm0s/WinPwnage): UAC bypass, Elevate, Persistence and Execution methods. The goal of this repo is to study the Windows penetration techniques.
@@ -205,16 +211,29 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Windows / Linux Local Privilege Escalation Workshop](https://github.com/sagishahar/lpeworkshop)
 
 ## Docker
+ - [Bypassing Docker Authz Plugin and Using Docker-Containerd for Privesc](https://staaldraad.github.io/post/2019-07-11-bypass-docker-plugin-with-containerd/): by Staaldraad.
  - [Container security notes](https://gist.github.com/FrankSpierings/5c79523ba693aaa38bc963083f48456c)
+ - [Dirty COW - (CVE-2016-5195) - Docker Container Escape](https://blog.paranoidsoftware.com/dirty-cow-cve-2016-5195-docker-container-escape/)
+ - [Docker Breakout](https://book.hacktricks.xyz/linux-unix/privilege-escalation/docker-breakout): by HackTricks
+ - [Docker security checklist](https://github.com/PercussiveElbow/docker-security-checklist)
+ - [Don't expose the Docker socket (not even to a container)](https://web.archive.org/web/20190623234615/https://www.lvh.io/posts/dont-expose-the-docker-socket-not-even-to-a-container.html)
+ - [Escaping Docker Privileged Containers](https://betterprogramming.pub/escaping-docker-privileged-containers-a7ae7d17f5a1): by Vickie Li
+ - [Escaping Containers to Execute Commands on Play with Docker Servers](https://www.bleepingcomputer.com/news/security/escaping-containers-to-execute-commands-on-play-with-docker-servers/)
  - [Escaping Docker container using waitid() – CVE-2017-5123](https://www.twistlock.com/labs-blog/escaping-docker-container-using-waitid-cve-2017-5123/)
  - [Escaping the Whale: Things you probably shouldn’t do with Docker (Part 1)](https://blog.secureideas.com/2018/05/escaping-the-whale-things-you-probably-shouldnt-do-with-docker-part-1.html)
- - [Hacking Docker the Easy way](https://pt.slideshare.net/BorgHan/hacking-docker-the-easy-way)
-
-### Docker escape
- - [Dirty COW - (CVE-2016-5195) - Docker Container Escape](https://blog.paranoidsoftware.com/dirty-cow-cve-2016-5195-docker-container-escape/)
- - [Don't expose the Docker socket (not even to a container)](https://web.archive.org/web/20190623234615/https://www.lvh.io/posts/dont-expose-the-docker-socket-not-even-to-a-container.html)
- - [Escaping Containers to Execute Commands on Play with Docker Servers](https://www.bleepingcomputer.com/news/security/escaping-containers-to-execute-commands-on-play-with-docker-servers/)
  - [Hack Allows Escape of Play-with-Docker Containers](https://threatpost.com/hack-allows-escape-of-play-with-docker-containers/140831/)
+ - [Hacking Docker the Easy way](https://pt.slideshare.net/BorgHan/hacking-docker-the-easy-way)
+ - [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/): by Trail of Bits
+
+### Tools
+ - [BOtB](https://github.com/brompwnie/botb): BOtB is a container analysis and exploitation tool designed to be used by pentesters and engineers while also being CI/CD friendly with common CI/CD technologies.
+ - [CDK](https://github.com/cdk-team/CDK): CDK is an open-sourced container penetration toolkit, offering stable exploitation in different slimmed containers without any OS dependency.
+ - [Deepce](https://github.com/stealthcopter/deepce): Docker Enumeration, Escalation of Privileges and Container Escapes (DEEPCE)
+ - [Dokcer-escape-tool](https://github.com/PercussiveElbow/docker-escape-tool): This tool will help identify if you're in a Docker container and try some quick escape techniques to help assess the security of your containers.
+ - [PrivilegedDockerEscape](https://github.com/0x03f3/PrivilegedDockerEscape): A bash script to create an interactive shell from a privileged docker container to the container host
+
+### Presentations
+ - [Introduction to Docker Hacking](https://www.youtube.com/watch?v=XiLfEU9wK-w): by NahamSec
 
 ## Cloud
 ### AWS
@@ -225,3 +244,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
 
 ### GCP
  - [Tutorial on privilege escalation and post exploitation tactics in Google Cloud Platform environments](https://about.gitlab.com/blog/2020/02/12/plundering-gcp-escalating-privileges-in-google-cloud-platform/): Very deep-dive into manual post-exploitation tactics and techniques for GCP.
+ - [GCP-IAM-Privilege-Escalation](https://github.com/RhinoSecurityLabs/GCP-IAM-Privilege-Escalation): IAM Privilege Escalation in GCP by RhinoSecurity.
+
+#### Tools
+ - [GCPBucketBrute](https://github.com/RhinoSecurityLabs/GCPBucketBrute): A script to enumerate Google Storage buckets, determine what access you have to them, and determine if they can be privilege escalated. By RhinoSecurity.
