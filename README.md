@@ -7,9 +7,9 @@ A curated list of awesome privilege escalation
     * [Escape restricted shells](#escape-restricted-shells)
     * [SUDO and SUID](#sudo-and-suid)
     * [Capabilities](#capabilities)
+    * [TTY Pushback / TIOCSTI injection](#tty-pushback--tiocsti-injection)
     * [Tools](#tools)
         * [Find CVEs](#find-cves)
-    * [Chkrootkit](#chkrootkit)
     * [NFS](#nfs)
     * [Presentations](#presentations)
 * [Windows](#windows)
@@ -17,6 +17,7 @@ A curated list of awesome privilege escalation
     * [Potato](#potato)
     * [Unquoted services with spaces](#unquoted-services-with-spaces)
     * [Groups.xml](#groupsxml)
+    * [NoFilter](#nofilter)
     * [Tools](#tools-1)
     * [Presentations](#presentations-1)
 * [Linux and Windows](#linux-and-windows)
@@ -28,9 +29,9 @@ A curated list of awesome privilege escalation
    * [GCP](#gcp)
 
 ## Linux
- - [A guide to Linux Privilege Escalation](https://payatu.com/guide-linux-privilege-escalation/)
+ - [A guide to Linux Privilege Escalation](https://payatu.com/guide-linux-privilege-escalation/): by Rashid-Feroze
  - [Attack and Defend: LinuxPrivilege Escalation Techniques of 2016](https://www.sans.org/reading-room/whitepapers/linux/attack-defend-linux-privilege-escalation-techniques-2016-37562): This paper will examine Linux privilege escalation techniques used throughout 2016 in detail, highlighting how these techniques work and how adversaries are using them.
- - [Back To The Future: Unix Wildcards Gone Wild](https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt): This article will cover one interesting old-school Unix hacking technique, that will still work in 2013.
+ - [Back To The Future: Unix Wildcards Gone Wild](https://web.archive.org/web/20180623004718/https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt): This article will cover one interesting old-school Unix hacking technique, that will still work in 2013.
  - [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/): by g0tmi1k
  - [Enumeration is the Key](https://medium.com/basic-linux-privilege-escalation/basic-linux-privilege-escalation-966de11f9997): by Marcos Tolosa
  - [Hackers Hut](https://www.win.tue.nl/~aeb/linux/hh/hh.html): Some random hacking hints, mainly from a Linux point of view.
@@ -41,6 +42,10 @@ A curated list of awesome privilege escalation
  - [Linux Privilege Escalation](https://percussiveelbow.github.io/linux-privesc/): an introduction to Linux escalation techniques, mainly focusing on file/process permissions, but along with some other stuff too.
  - [Linux Privilege Escalation](https://github.com/lamontns/pentest/blob/master/privilege-escalation/linux-privilege-escalation.md): Linux Privilege Escalation by lamontns.
  - [Linux Privilege Escalation](https://book.hacktricks.xyz/linux-unix/privilege-escalation): by HackTricks
+ - [Linux Privilege Escalation](https://reboare.gitbooks.io/booj-security/content/general-linux/privilege-escalation.html): by reboare.
+ - [Local Priv Esc - Linux](https://notes.offsec-journey.com/privilege-escalation/linux-priv-esc): by Offsec Journey.
+ - [PrivilageEsc Linux](https://docs.h4rithd.com/linux/privilageesc-linux): by h4rithd.
+ - [Linux Privilege Escalation – Exploiting User Groups](https://steflan-security.com/linux-privilege-escalation-exploiting-user-groups/): by Steflan Security.
  - [Linux Privilege Escalation via Dynamically Linked Shared Object Library](https://www.contextis.com/en/blog/linux-privilege-escalation-via-dynamically-linked-shared-object-library): How RPATH and Weak File Permissions can lead to a system compromise.
  - [Local Linux Enumeration & Privilege Escalation Cheatsheet](https://www.rebootuser.com/?p=1623): a few Linux commands that may come in useful when trying to escalate privileges on a target system.
  - [Local Linux Enumeration & Privilege Escalation](https://hackingandsecurity.blogspot.com/2016/05/local-linux-enumeration-privilege.html): a few Linux commands that may come in useful when trying to escalate privileges on a target system.
@@ -53,7 +58,6 @@ A curated list of awesome privilege escalation
  - [Privilege escalation: Linux](https://vulp3cula.gitbook.io/hackers-grimoire/post-exploitation/privesc-linux)
  - [Privilege Escalation & Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/PrivescPostEx.md)
  - [Reach the root! How to gain privileges in Linux?](https://hackmag.com/security/reach-the-root/)
- - [TTY Input Pushback Privilege Escalation](https://www.halfdog.net/Security/2012/TtyPushbackPrivilegeEscalation/): When user working as root switches to another user with su and happens to execute the pushback program as that user, the tty input data pushed back is executed in the shell and context of user root.
  - [Understanding Privilege Escalation](http://www.admin-magazine.com/Articles/Understanding-Privilege-Escalation): Some techniques malicious users employ to escalate their privileges on a Linux system.
 
 ### Escape restricted shells
@@ -77,12 +81,19 @@ A curated list of awesome privilege escalation
  - [getcap, setcap and file capabilities](https://www.insecure.ws/linux/getcap_setcap.html)
  - [Spicing up your own access with capabilities](https://www.redpill-linpro.com/sysadvent/2016/12/06/spicing-up-your-access.html)
 
+### TTY Pushback / TIOCSTI injection
+ - [The oldest privesc: injecting careless administrators' terminals using TTY pushback](https://www.errno.fr/TTYPushback.html): By Guillaume Quéré
+ - [TIOCSTI injection](https://news.baycode.eu/0x05-tiocsti-injection/): Abusing TIOCSTI to manipulate process file descriptors and execute arbitrary commands. By Krystian Bajno
+ - [TIOCSTI is a kernel problem.](http://jdebp.info/FGA/TIOCSTI-is-a-kernel-problem.html): By Jonathan de Boyne Pollard.
+ - [TTY Input Pushback Privilege Escalation](https://www.halfdog.net/Security/2012/TtyPushbackPrivilegeEscalation/): When user working as root switches to another user with su and happens to execute the pushback program as that user, the tty input data pushed back is executed in the shell and context of user root.
+
 ### Tools
  - [AutoLocalPrivilegeEscalation](https://github.com/ngalongc/AutoLocalPrivilegeEscalation): An automated script that download potential exploit for linux kernel from exploitdb, and compile them automatically.
  - [BeRoot](https://github.com/AlessandroZ/BeRoot): BeRoot Project is a post exploitation tool to check common misconfigurations to find a way to escalate our privilege.
 exploits.
  - [exploit-suggester](https://github.com/pentestmonkey/exploit-suggester): This tool reads the output of “showrev -p” on Solaris machines and outputs a list of exploits that you might want to try.
 is intended to be executed locally on a Linux box to enumerate basic system info and search for common privilege escalation vectors such as word writable files, misconfigurations, clear-text password and applicable
+ - [GTFONow](https://github.com/Frissi0n/GTFONow): Automatic privilege escalation for misconfigured capabilities, sudo and suid binaries using GTFOBins.
  - [kernelpop](https://github.com/spencerdodd/kernelpop): kernelpop is a framework for performing automated kernel vulnerability enumeration and exploitation.
  - [LES](https://github.com/mzet-/linux-exploit-suggester): LES: Linux privilege escalation auditing tool
  - [LinEnum](https://github.com/rebootuser/LinEnum): Scripted local Linux enumeration & privilege escalation checks
@@ -96,6 +107,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [linux-soft-exploit-suggester](https://github.com/belane/linux-soft-exploit-suggester): linux-soft-exploit-suggester finds exploits for all vulnerable software in a system helping with the privilege escalation.
  - [PrivEsc](https://github.com/1N3/PrivEsc): A collection of Windows, Linux and MySQL privilege escalation scripts and exploits.
  - [pspy](https://github.com/DominicBreuker/pspy): unprivileged Linux process snooping
+ - [SUDO_KILLER ](https://github.com/TH3xACE/SUDO_KILLER): A tool designed to exploit a privilege escalation vulnerability in the sudo program on Unix-like systems.
  - [traitor](https://github.com/liamg/traitor): Automatically exploit low-hanging fruit to pop a root shell. Linux privilege escalation made easy!
  - [unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check): Shell script to check for simple privilege escalation vectors on Unix systems
  - [Unix-Privilege-Escalation-Exploits-Pack](https://github.com/Kabot/Unix-Privilege-Escalation-Exploits-Pack): Exploits for getting local root on Linux, BSD, AIX, HP-UX, Solaris, RHEL, SUSE etc.
@@ -106,9 +118,6 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Arch-Audit](https://www.2daygeek.com/arch-audit-a-tool-to-check-vulnerable-packages-in-arch-linux/): A tool to check vulnerable packages in Arch Linux.
  - [cve-check-tool](https://github.com/clearlinux/cve-check-tool): Original Automated CVE Checking Tool.
  - [LPVS](https://github.com/lwindolf/lpvs): Linux Package Vulnerability Scanner for CentOS and Ubuntu.
-
-### Chkrootkit
- - [Local root exploit in Chkrootkit](https://lepetithacker.wordpress.com/2017/04/30/local-root-exploit-in-chkrootkit/): Security researchers have found an local exploit for Chkrootkit 0.49 who allow to a simple user to make root’s commands.
 
 ### NFS
  - [Exploiting a Mis-Configured NFS Share](https://www.computersecuritystudent.com/SECURITY_TOOLS/METASPLOITABLE/EXPLOIT/lesson4/index.html)
@@ -130,6 +139,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Privilege escalation: Windows](https://vulp3cula.gitbook.io/hackers-grimoire/post-exploitation/privesc-windows)
  - [Windows elevation of privileges ToC](https://guif.re/windowseop)
  - [Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows/windows-local-privilege-escalation): by HackTricks
+ - [Windows Local Privilege Escalation Cookbook](https://github.com/nickvourd/Windows-Local-Privilege-Escalation-Cookbook): Windows Local Privilege Escalation Cookbook by nickvourd.
  - [Windows Post Gather Modules](https://www.offensive-security.com/metasploit-unleashed/windows-post-gather-modules/): Metasploit offers a number of post exploitation modules that allow for further information gathering on your target network.
  - [Windows Priv Esc](https://www.sock-raw.org/wiki/doku.php/windows_priv_esc)
  - [Windows Privilege Escalation Fundamentals](https://www.fuzzysecurity.com/tutorials/16.html)
@@ -152,6 +162,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
 
 ### Potato
  - [CertPotato](https://sensepost.com/blog/2022/certpotato-using-adcs-to-privesc-from-virtual-and-network-service-accounts-to-local-system/): Using ADCS to privesc from virtual and network service accounts to local system.
+ - [Coerced potato](https://github.com/Prepouce/CoercedPotato): From Patate (LOCAL/NETWORK SERVICE) to SYSTEM by abusing SeImpersonatePrivilege on Windows 10, Windows 11 and Server 2022.
  - [Hot Potato](https://pentestlab.blog/2017/04/13/hot-potato/): Hot potato is the code name of a Windows privilege escalation technique that was discovered by Stephen Breen. This technique is actually a combination of two known windows issues  like NBNS spoofing and NTLM relay with the implementation of a fake WPAD proxy server which is running locally on the target host.
  - [Hot Potato](https://securityonline.info/hot-potato-windows-privilege-escalation-metasploit-powershellhot-potato-windows-privilege-escalation/): Windows 7, 8, 10, Server 2008, Server 2012 Privilege Escalation in Metasploit & PowerShell.
  - [Hot Potato – Windows Privilege Escalation](https://foxglovesecurity.com/2016/01/16/hot-potato/): Privilege Escalation on Windows 7, 8, 10, Server 2008, Server 2012 … and a new network attack.
@@ -176,9 +187,15 @@ is intended to be executed locally on a Linux box to enumerate basic system info
 ### PrintNightmare
  - [Universal Privilege Escalation and Persistence](https://pentestlab.blog/2021/08/02/universal-privilege-escalation-and-persistence-printer/): The Print Spooler is responsible to manage and process printer jobs. It runs as a service with SYSTEM level privileges on windows environments.
 
+### NoFilter
+ - [#NoFilter - Abusing Windows Filtering Platform for Privilege Escalation](https://www.deepinstinct.com/blog/nofilter-abusing-windows-filtering-platform-for-privilege-escalation): An evasive and undetected privilege escalation technique that abuses the Windows Filtering Platform (WFP).
+
 ### Tools
+ - [ADAPE-Script](https://github.com/hausec/ADAPE-Script): Active Directory Assessment and Privilege Escalation Script by hausec
+ - [GodPotato](https://github.com/BeichenDream/GodPotato): GodPotato enables privilege escalation in Windows 2012 - Windows 2022, now as long as you have "ImpersonatePrivilege" permission. 
  - [JAWS - Just Another Windows (Enum) Script](https://github.com/411Hall/JAWS): JAWS is PowerShell script designed to help penetration testers (and CTFers) quickly identify potential privilege escalation vectors on Windows systems. It is written using PowerShell 2.0 so 'should' run on every Windows version since Windows 7.
  - [juicy-potato](https://github.com/ohpe/juicy-potato): A sugared version of RottenPotatoNG, with a bit of juice, i.e. another Local Privilege Escalation tool, from a Windows Service Accounts to NT AUTHORITY\SYSTEM.
+ - [NoFilter](https://github.com/deepinstinct/NoFilter): Tool for abusing the Windows Filtering Platform for privilege escalation. It can launch a new console as "NT AUTHORITY\SYSTEM" or as another user that is logged on to the machine.
  - [Potato](https://github.com/foxglovesec/Potato): Potato Privilege Escalation on Windows 7, 8, 10, Server 2008, Server 2012.
  - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit): PowerSploit is a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment.
  - [PrivescCheck](https://github.com/itm4n/PrivescCheck): Enumerate common Windows security misconfigurations which can be leveraged for privilege escalation and gather various information which might be useful for exploitation and/or post-exploitation, by itm4n.
@@ -226,6 +243,7 @@ is intended to be executed locally on a Linux box to enumerate basic system info
  - [Escaping Docker Privileged Containers](https://betterprogramming.pub/escaping-docker-privileged-containers-a7ae7d17f5a1): by Vickie Li
  - [Escaping Containers to Execute Commands on Play with Docker Servers](https://www.bleepingcomputer.com/news/security/escaping-containers-to-execute-commands-on-play-with-docker-servers/)
  - [Escaping Docker container using waitid() – CVE-2017-5123](https://www.twistlock.com/labs-blog/escaping-docker-container-using-waitid-cve-2017-5123/)
+ - [Escaping privileged containers for fun](https://web.archive.org/web/20220307063103/https://pwning.systems/posts/escaping-containers-for-fun/): by Jordy/Oblivion/pwning.systems
  - [Escaping the Whale: Things you probably shouldn’t do with Docker (Part 1)](https://blog.secureideas.com/2018/05/escaping-the-whale-things-you-probably-shouldnt-do-with-docker-part-1.html)
  - [Hack Allows Escape of Play-with-Docker Containers](https://threatpost.com/hack-allows-escape-of-play-with-docker-containers/140831/)
  - [Hacking Docker the Easy way](https://pt.slideshare.net/BorgHan/hacking-docker-the-easy-way)
